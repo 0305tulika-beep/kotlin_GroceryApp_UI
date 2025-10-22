@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your mobile number"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_margin="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile number"
+        android:inputType="phone"
+        android:background="@drawable/border"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        app:layout_constraintTop_toBottomOf="@+id/headerText"
+        android:layout_margin="24dp" />
+
+
+
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn2"
+            app:layout_constraintBottom_margin="16dp"
+            app:layout_constraintBottom_toTopOf="@id/keypadGrid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_margin="32dp" />
+
+    <Button
+        android:id="@+id/resendCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textColor="#008000"
+    android:background="#FFFFFF"
+    android:padding="12dp"
+    android:textSize="16sp"
+    android:layout_marginTop="16dp"
+    android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/keypadGrid"
+        app:layout_constraintStart_toStartOf="" _toEndOf="parent"/>
+
+
+
+    <GridLayout
+        android:id="@+id/keypadGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:padding="16dp"
+        android:background="#E0E0E0"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <Button android:text="1" style="@style/KeypadButton"/>
+    <Button android:text="2\nABC" style="@style/KeypadButton"/>
+    <Button android:text="3\nDEF" style="@style/KeypadButton"/>
+    <Button android:text="4\nGHI" style="@style/KeypadButton"/>
+    <Button android:text="5\nJKL" style="@style/KeypadButton"/>
+    <Button android:text="6\nMNO" style="@style/KeypadButton"/>
+    <Button android:text="7\nPQRS" style="@style/KeypadButton"/>
+    <Button android:text="8\nTUV" style="@style/KeypadButton"/>
+    <Button android:text="9\nWXYZ" style="@style/KeypadButton"/>
+    <Button android:text="+ # *" style="@style/KeypadButton"/>
+    <Button android:text="0" style="@style/KeypadButton"/>
+    <Button android:text="x" style="@style/KeypadButton"/>
+</GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

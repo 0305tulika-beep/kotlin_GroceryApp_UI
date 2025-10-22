@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/deliveryPerson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/man"
+        android:scaleType="centerCrop"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="400dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/carrot" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to our store"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/taglineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get your groceries with nectar"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/getStartedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/holo_green_light"
+    </LinearLayout>
+

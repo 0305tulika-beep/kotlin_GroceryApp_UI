@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="My Cart"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBellPepper"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_24"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Bell Pepper" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bell Pepper Red"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1kg, Price"
+                        android:textSize="14sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/btnDecreaseBellPepper"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="-"
+                            android:textSize="20sp"
+                            android:textColor="#7C7C7C"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+
+                        <TextView
+                            android:id="@+id/txtQuantityBellPepper"
+                            android:layout_width="40dp"
+                            android:layout_height="32dp"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="8dp" />
+
+                        <TextView
+                            android:id="@+id/btnIncreaseBellPepper"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#4CAF50"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnRemoveBellPepper"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/cross"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Remove"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$4.99"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/imgEggChicken"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_25"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Egg Chicken" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Egg Chicken Red"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4pcs, Price"
+                        android:textSize="14sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/btnDecreaseEggChicken"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="-"
+                            android:textSize="20sp"
+                            android:textColor="#7C7C7C"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+
+                        <TextView
+                            android:id="@+id/txtQuantityEggChicken"
+                            android:layout_width="40dp"
+                            android:layout_height="32dp"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="8dp" />
+
+                        <TextView
+                            android:id="@+id/btnIncreaseEggChicken"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#4CAF50"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnRemoveEggChicken"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/cross"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Remove"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1.99"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBananas"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_26"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Organic Bananas" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Organic Bananas"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12kg, Price"
+                        android:textSize="14sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/btnDecreaseBananas"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="-"
+                            android:textSize="20sp"
+                            android:textColor="#7C7C7C"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+
+                        <TextView
+                            android:id="@+id/txtQuantityBananas"
+                            android:layout_width="40dp"
+                            android:layout_height="32dp"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="8dp" />
+
+                        <TextView
+                            android:id="@+id/btnIncreaseBananas"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#4CAF50"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnRemoveBananas"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/cross"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Remove"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$3.00"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/imgGinger"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_27"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Ginger" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ginger"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="250gm, Price"
+                        android:textSize="14sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/btnDecreaseGinger"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="-"
+                            android:textSize="20sp"
+                            android:textColor="#7C7C7C"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+
+                        <TextView
+                            android:id="@+id/txtQuantityGinger"
+                            android:layout_width="40dp"
+                            android:layout_height="32dp"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="8dp" />
+
+                        <TextView
+                            android:id="@+id/btnIncreaseGinger"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#4CAF50"
+                            android:gravity="center"
+                            android:background="@drawable/bg_quantity_button"
+                            android:clickable="true"
+                            android:focusable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnRemoveGinger"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/cross"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Remove"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2.99"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btnApplyFilter"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Apply Filter"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#4CAF50"
+            android:elevation="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/navShop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img_6"
+                android:tint="#181725" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navExplore"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img_7"
+                android:tint="#53B175" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navCart"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img_8"
+                android:tint="#181725" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navFavourite"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img_9"
+                android:tint="#181725" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navAccount"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img_10"
+                android:tint="#181725" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
