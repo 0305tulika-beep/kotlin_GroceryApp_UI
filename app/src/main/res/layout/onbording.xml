@@ -8,29 +8,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/man"
-        android:scaleType="centerCrop"/>
-
-
+        android:scaleType="centerCrop"
+        android:contentDescription="string/delivery_person" />
 
     <LinearLayout
         android:id="@+id/textContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="400dp">
+        android:layout_marginTop="400dp"
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/img"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/carrot" />
+            android:src="@drawable/carrot"
+            android:contentDescription="string/app_logo" />
 
         <TextView
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to our store"
+            android:text="Welcome to nectar"
             android:textSize="30sp"
             android:textColor="@android:color/white"
             android:textStyle="bold"
@@ -41,7 +42,7 @@
             android:id="@+id/taglineText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get your groceries with nectar"
+            android:text="Get your groceries in as fast as an hour"
             android:textSize="16sp"
             android:textColor="@android:color/white"
             android:layout_gravity="center_horizontal"
@@ -51,10 +52,12 @@
             android:id="@+id/getStartedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get Started"
+            android:text="get started"
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/white"
             android:layout_marginTop="20dp"
-            android:backgroundTint="@android:color/holo_green_light"
+            android:backgroundTint="@android:color/holo_green_light" />
+
     </LinearLayout>
 
+</FrameLayout>

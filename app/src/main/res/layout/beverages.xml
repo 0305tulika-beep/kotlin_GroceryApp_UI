@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
+        <!-- Header Section -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,14 +22,14 @@
                 android:layout_height="24dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/arrow"
-                android:contentDescription="Back" />
+                android:contentDescription="string/back"
+                android:src="@drawable/arrow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Beverages"
+                android:text="string/beverages"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -40,8 +40,8 @@
                 android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/filter"
-                android:contentDescription="Filter" />
+                android:contentDescription="string/filter"
+                android:src="@drawable/filter" />
 
         </RelativeLayout>
 
@@ -50,8 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
-            android:padding="16dp"
-            android:rowCount="3">
+            android:padding="16dp">
 
 
             <androidx.cardview.widget.CardView
@@ -72,14 +71,14 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/img_11"
-                        android:contentDescription="Diet Coke" />
+                        android:contentDescription="string/diet_coke"
+                        android:src="@drawable/img_11" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Diet Coke"
+                        android:text="string/diet_coke"
                         android:textColor="#000000"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -88,7 +87,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="355ml, Price"
+                        android:text="string/diet_coke_size"
                         android:textColor="#7C7C7C"
                         android:textSize="12sp" />
 
@@ -101,7 +100,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:text="$1.99"
+                            android:text="string/price_1_99"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -110,8 +109,8 @@
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/add"
-                            android:contentDescription="Add to cart" />
+                            android:contentDescription="string/add_to_cart"
+                            android:src="@drawable/add" />
 
                     </RelativeLayout>
 
@@ -138,14 +137,14 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/img_12"
-                        android:contentDescription="Sprite Can" />
+                        android:contentDescription="string/sprite_can"
+                        android:src="@drawable/img_12" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Sprite Can"
+                        android:text="string/sprite_can"
                         android:textColor="#000000"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -154,7 +153,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="325ml, Price"
+                        android:text="string/sprite_size"
                         android:textColor="#7C7C7C"
                         android:textSize="12sp" />
 
@@ -167,7 +166,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:text="$1.50"
+                            android:text="string/price_1_50"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -176,8 +175,8 @@
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/add"
-                            android:contentDescription="Add to cart" />
+                            android:contentDescription="string/add_to_cart"
+                            android:src="@drawable/add" />
 
                     </RelativeLayout>
 
@@ -204,14 +203,14 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/img_13"
-                        android:contentDescription="Apple & Grape Juice" />
+                        android:contentDescription="string/apple_grape_juice"
+                        android:src="@drawable/img_13" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Apple &amp; Grape Juice"
+                        android:text="string/apple_grape_juice"
                         android:textColor="#000000"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -220,7 +219,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="2L, Price"
+                        android:text="string/juice_size"
                         android:textColor="#7C7C7C"
                         android:textSize="12sp" />
 
@@ -233,7 +232,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:text="$15.99"
+                            android:text="string/price_15_99"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -242,8 +241,8 @@
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/add"
-                            android:contentDescription="Add to cart" />
+                            android:contentDescription="string/add_to_cart"
+                            android:src="@drawable/add" />
 
                     </RelativeLayout>
 
@@ -270,14 +269,14 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/img_14"
-                        android:contentDescription="Orange Juice" />
+                        android:contentDescription="string/orange_juice"
+                        android:src="@drawable/img_14" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Orange Juice"
+                        android:text="string/orange_juice"
                         android:textColor="#000000"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -286,7 +285,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="2L, Price"
+                        android:text="string/juice_size"
                         android:textColor="#7C7C7C"
                         android:textSize="12sp" />
 
@@ -299,7 +298,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:text="$15.99"
+                            android:text="string/price_15_99"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -308,8 +307,8 @@
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/add"
-                            android:contentDescription="Add to cart" />
+                            android:contentDescription="string/add_to_cart"
+                            android:src="@drawable/add" />
 
                     </RelativeLayout>
 
@@ -336,14 +335,14 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/img_15"
-                        android:contentDescription="Coca Cola Can" />
+                        android:contentDescription="string/coca_cola_can"
+                        android:src="@drawable/img_15" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Coca Cola Can"
+                        android:text="string/coca_cola_can"
                         android:textColor="#000000"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -352,7 +351,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="325ml, Price"
+                        android:text="string/cola_size"
                         android:textColor="#7C7C7C"
                         android:textSize="12sp" />
 
@@ -365,7 +364,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:text="$4.99"
+                            android:text="string/price_4_99"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -374,8 +373,8 @@
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/add"
-                            android:contentDescription="Add to cart" />
+                            android:contentDescription="string/add_to_cart"
+                            android:src="@drawable/add" />
 
                     </RelativeLayout>
 
@@ -402,14 +401,14 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/img_16"
-                        android:contentDescription="Pepsi Can" />
+                        android:contentDescription="string/pepsi_can"
+                        android:src="@drawable/img_16" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Pepsi Can"
+                        android:text="string/pepsi_can"
                         android:textColor="#000000"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -418,7 +417,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="330ml, Price"
+                        android:text="string/pepsi_size"
                         android:textColor="#7C7C7C"
                         android:textSize="12sp" />
 
@@ -431,7 +430,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:text="$4.99"
+                            android:text="string/price_4_99"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -440,8 +439,8 @@
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/add"
-                            android:contentDescription="Add to cart" />
+                            android:contentDescription="string/add_to_cart"
+                            android:src="@drawable/add" />
 
                     </RelativeLayout>
 

@@ -12,6 +12,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/location"
+        android:contentDescription="Location Image"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,9 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/topImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
-        />
-
+        android:layout_marginTop="30dp" />
 
     <TextView
         android:id="@+id/loginSubtitle"
@@ -42,7 +41,6 @@
         app:layout_constraintTop_toBottomOf="@id/loginTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="8dp"
         android:layout_marginTop="3dp"/>
 
     <TextView
@@ -55,8 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loginSubtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="8dp" />
-
+        android:layout_marginTop="8dp" />
 
     <EditText
         android:id="@+id/emailInput"
@@ -71,9 +68,7 @@
         app:layout_constraintTop_toBottomOf="@id/loginSubtitle2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="24dp"
         android:layout_marginTop="30dp"/>
-
 
     <EditText
         android:id="@+id/passwordInput"
@@ -88,12 +83,7 @@
         app:layout_constraintTop_toBottomOf="@id/emailInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="16dp"
         android:layout_marginTop="30dp"/>
-
-
-
-
 
     <Button
         android:id="@+id/loginButton"
@@ -108,9 +98,6 @@
         app:layout_constraintTop_toBottomOf="@id/passwordInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="24dp"
         android:layout_marginTop="78dp"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

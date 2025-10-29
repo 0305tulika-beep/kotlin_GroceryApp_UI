@@ -1,41 +1,35 @@
-package com.example.nectar
+package com.example.yourapp // Change to your package name
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.nectar.ui.theme.NectarTheme
+import android.os.Handler
+import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
+import com.example.nectar.R
 
-class MainActivity : ComponentActivity() {
+class SplashActivity : AppCompatActivity() {
+
+    private val SPLASH_DELAY: Long = 1500
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.splash_screen)
-        }
+        setContentView(R.layout.splash_screen)
+
+
+        supportActionBar?.hide()
+
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            navigateToMainActivity()
+        }, SPLASH_DELAY)
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    private fun navigateToMainActivity() {
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    NectarTheme {
-        Greeting("Android")
+    override fun onBackPressed() {
     }
 }

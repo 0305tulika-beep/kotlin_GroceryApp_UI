@@ -23,7 +23,6 @@
             android:textColor="#000000"
             android:textStyle="bold" />
 
-
     </RelativeLayout>
 
 
@@ -79,7 +78,6 @@
                         android:textColor="#7C7C7C"
                         android:layout_marginTop="4dp" />
 
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -87,8 +85,6 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center_vertical">
-
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -106,7 +102,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-
                 android:padding="16dp"
                 android:layout_marginBottom="12dp">
 
@@ -142,7 +137,6 @@
                         android:textColor="#7C7C7C"
                         android:layout_marginTop="4dp" />
 
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -150,8 +144,6 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center_vertical">
-
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -204,14 +196,13 @@
                         android:textColor="#7C7C7C"
                         android:layout_marginTop="4dp" />
 
-                    </LinearLayout>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center_vertical">
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -264,7 +255,6 @@
                         android:textColor="#7C7C7C"
                         android:layout_marginTop="4dp" />
 
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -272,8 +262,6 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center_vertical">
-
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -288,134 +276,5 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:background="#FFFFFF"
-        android:elevation="4dp">
-
-        <Button
-            android:id="@+id/btnApplyFilter"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="Add all to cart"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:background="#4CAF50"
-            android:elevation="0dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/bottomNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:elevation="8dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp">
-
-
-        <LinearLayout
-            android:id="@+id/navShop"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/img_6"
-                android:tint="#181725" />
-
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/navExplore"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/img_7"
-                android:tint="#53B175" />
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/navCart"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/img_8"
-                android:tint="#181725" />
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/navFavourite"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/img_9"
-                android:tint="#181725" />
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/navAccount"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/img_10"
-                android:tint="#181725" />
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
 
 </LinearLayout>
