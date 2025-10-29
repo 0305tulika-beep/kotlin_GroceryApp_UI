@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nectar.R
+import com.example.nectar.databinding.OnbordingBinding
 
 class SplashActivity : AppCompatActivity() {
 
@@ -25,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun navigateToMainActivity() {
-        val intent = Intent(this, HomeActivity::class.java)
+        val intent = Intent(this, OnbordingBinding::class.java)
         startActivity(intent)
         finish()
     }
