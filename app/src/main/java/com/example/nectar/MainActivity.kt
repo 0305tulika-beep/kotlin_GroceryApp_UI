@@ -1,4 +1,4 @@
-package com.example.yourapp // Change to your package name
+package com.example.nectar
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.nectar.R
 import com.example.nectar.databinding.OnbordingBinding
 
-class SplashActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private val SPLASH_DELAY: Long = 1500
 
@@ -26,11 +26,10 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun navigateToMainActivity() {
-        val intent = Intent(this, OnbordingBinding::class.java)
+        val intent = Intent(this, OnboardingActivity::class.java)
         startActivity(intent)
         finish()
     }
 
-    override fun onBackPressed() {
-    }
+
 }
